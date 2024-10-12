@@ -44,11 +44,12 @@
               <input type="text" id="lname" required /> </label
             ><label for="email"> Email <input type="email" id="email"  /> </label
             ><label for="phone"
-              >Phone Number <input type="tel" id="phone" required pattern="[0-9]{10}"/> </label
+              >Phone Number <input type="tel" id="phone" required 
+              title="Please enter a valid 10 digit number" pattern="[0-9]{10}"/> </label
             ><label for="pass"
               >Password
 
-              <input type="password" required pattern="(?=.*[a-z])(?=.*\d)(?=.*[\$*()!#]).{8,}"  /> </label
+              <input type="password" minlength="10" required pattern="(?=.*[a-z])(?=.*\d)(?=.*[\$*()!#]).{8,}"  /> </label
             ><label for="confirmPass"
               >Confirm Password
               <input type="password" name="" id="" required pattern="(?=.*[a-z])(?=.*\d)(?=.*[\$*()!#]).{8,}"  />

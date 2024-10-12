@@ -188,3 +188,12 @@ color: white;
   width: 80px;
   padding: 10px;
 }
+
+
+input:invalid{
+  border-color: red;
+}
+
+input:valid{
+  border-color: green;
+}
