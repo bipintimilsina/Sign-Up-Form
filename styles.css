@@ -12,6 +12,7 @@
 
 body {
   font-family: custom;
+  box-sizing: border-box;
   font-size: 1.2rem;
 
   /* background-color: red; */
@@ -28,16 +29,14 @@ a {
   width: 100vw;
 }
 
-img {
-  /* width:50% ; */
-  height: 100%;
-  width: 491px;
+/*  */img {
+height: 100%;
 
-  /* height: 100px; */
-  /* height:100% ; */
+width: 491px;
 }
-
+  
 /*  */
+
 
 .form-section {
   /* width:50% */
@@ -46,13 +45,22 @@ img {
 }
 
 .side-hero {
-  height: 100%;
-  min-width: 491px;
-
+  /* height: 100%; */
+  height: 100vh;
   display: flex;
+  flex-grow: 1;
   justify-content: center;
-  align-items: center;
-  width: 70vw;
+  align-items:center ;
+  min-width: 470px;
+  /* position: relative  ; */
+  width: 60vw;
+  
+  background:url(images/sebastian-staines-PL3IgSokBLU-unsplash.jpg) ;
+  background-size: cover;
+
+
+
+
 }
 /* img{
   margin-top: 0;
@@ -136,4 +144,47 @@ color: white;
 font-family: customFontBold
 ;
 
+}
+.side-hero >div{
+  /* z-index: 2; */
+background-color: black;
+/* opacity:70%; */
+/* margin-top: -100px; */
+background-color: rgba(0, 0, 0, 0.527);
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+line-height: 2rem;
+
+/* gap: 10px; */
+color: white;
+}
+
+.side-hero >div img
+{
+  /* width: 50%; */
+  /* height: 126px; */
+  height: 126px;
+  width: 100px;
+}
+
+
+
+
+
+/* styles.css | http://127.0.0.1:5500/styles.css?_cacheOverride=1728723130578 */
+
+.side-hero > div img {
+  padding: 10px;
+}
+
+/* styles.css | http://127.0.0.1:5500/styles.css?_cacheOverride=1728723369158 */
+
+.side-hero > div img {
+  /* height: 126px; */
+  /* width: 100px; */
+  height: 106px;
+  width: 80px;
+  padding: 10px;
 }
